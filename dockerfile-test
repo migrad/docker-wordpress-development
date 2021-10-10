@@ -1,0 +1,10 @@
+FROM wordpress:latest
+
+ENV DIRPATH=pwd
+# Install Composer
+COPY --from=composer /usr/bin/composer /usr/bin/composer
+
+WORKDIR $DIRPATH
+
+# Install Codeception
+RUN /usr/bin/composer require "codeception/codeception" --dev
