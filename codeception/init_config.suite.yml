@@ -1,0 +1,6 @@
+actor: init_configTester
+modules:
+  enabled:
+    - \Helper\Init_config
+    - PhpBrowser:
+        url: http://0.0.0.0:80

@@ -1,0 +1,4 @@
+actor: ConfigTester
+modules:
+    enabled:
+        - \Helper\Config
