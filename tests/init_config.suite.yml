@@ -1,6 +1,0 @@
-actor: Init_configTester
-modules:
-    enabled:
-        - \Helper\Init_config
-        - PhpBrowser:
-              url: http://localhost:8080

@@ -1,4 +1,4 @@
-FROM wordpress:{{ env.wordpressTag }}
+FROM wordpress:5.8-php7.3-apache
 
 # Install Composer
 COPY --from=composer /usr/bin/composer /usr/bin/composer
