@@ -1,4 +1,4 @@
-FROM wordpress:{{ env.wordpressTag }}
+FROM {{ env.wordpressTag }}
 
 # Install Composer
 COPY --from=composer /usr/bin/composer /usr/bin/composer
