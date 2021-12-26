@@ -10,7 +10,7 @@ if ($handle) {
         $version = explode(':', $line);
         $versionElems = explode('-', $version[1]);
 
-        $path = $version[0];
+        $path = $version[0] . '-dev';
 
         if ($versionElems) {
             foreach ($versionElems as $elem) {
